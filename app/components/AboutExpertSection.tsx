@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutExpertSection() {
   return (
@@ -34,9 +35,11 @@ export default function AboutExpertSection() {
               I think like an owner because I am one.
             </p>
 
-            <button className="bg-blue-600 text-white font-medium px-8 py-3 rounded-lg hover:bg-blue-700 transition w-fit">
-              About Me
-            </button>
+            <Link href="/about-me/background">
+              <button className="bg-blue-600 text-white font-medium px-8 py-3 rounded-lg hover:bg-blue-700 transition w-fit">
+                About Me
+              </button>
+            </Link>
           </div>
         </div>
       </div>

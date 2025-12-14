@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ProvenSuccessSection() {
   return (
-    <section className="bg-white py-20">
+    <section className="bg-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Left: Content */}

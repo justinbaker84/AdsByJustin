@@ -20,8 +20,8 @@ export default function Home() {
         <Image
           src="/home-page-sales.png"
           alt="Sales growth chart"
-          width={800}
-          height={600}
+          width={960}
+          height={720}
           className="mx-auto"
         />
       </section>

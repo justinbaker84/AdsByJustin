@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function WhatIDoSection() {
   const services = [
@@ -6,24 +7,28 @@ export default function WhatIDoSection() {
       title: "Google",
       description: "The #1 ad platform for small and medium businesses. It is the best way to reach a niche audience when they want to buy.",
       linkText: "Trade Secrets",
+      link: "/trade-secrets/google-ads",
       image: "/home/g-logo.png"
     },
     {
       title: "Facebook",
       description: "If Facebook has the ability to reach your audience you can get great results with elite ad creative and a little know-how.",
       linkText: "Trade Secrets",
+      link: "/trade-secrets/facebook-ads",
       image: "/home/fb-logo.png"
     },
     {
       title: "Tik Tok",
       description: "The targeting is not as good as Facebook, but the traffic is a lot cheaper because there is less competition among advertisers.",
       linkText: "Trade Secrets",
+      link: "/trade-secrets/tik-tok-ads",
       image: "/home/tik-tok-logo.jpg"
     },
     {
       title: "CRO",
       description: "Conversion Rate Optimization means getting more people to convert into sales. It is a LOT cheaper than buying more traffic.",
       linkText: "Trade Secrets",
+      link: "/trade-secrets/cro",
       image: "/home/cro.png"
     }
   ];
@@ -50,9 +55,11 @@ export default function WhatIDoSection() {
                 />
               </div>
               <p className="text-lg text-gray-700 mb-6 leading-relaxed">{service.description}</p>
-              <button className="bg-blue-600 text-white font-medium px-8 py-3 rounded-lg hover:bg-blue-700 transition">
-                {service.linkText}
-              </button>
+              <Link href={service.link}>
+                <button className="bg-blue-600 text-white font-medium px-8 py-3 rounded-lg hover:bg-blue-700 transition">
+                  {service.linkText}
+                </button>
+              </Link>
             </div>
           ))}
         </div>
@@ -60,4 +67,3 @@ export default function WhatIDoSection() {
     </section>
   );
 }
-

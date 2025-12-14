@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Footer from './Footer';
 import { ReactNode } from 'react';
 
@@ -127,9 +128,11 @@ export default function AboutMeLayout({
           <h2 className="text-4xl md:text-5xl font-bold mb-8">
             Ready to Grow Your Business?
           </h2>
-          <button className="bg-white text-blue-600 font-bold text-xl px-10 py-4 rounded-lg hover:bg-gray-100 transition shadow-lg">
-            Contact Me
-          </button>
+          <Link href="/contact">
+            <button className="bg-white text-blue-600 font-bold text-xl px-10 py-4 rounded-lg hover:bg-gray-100 transition shadow-lg">
+              Contact Me
+            </button>
+          </Link>
         </div>
       </section>
 
