@@ -23,7 +23,7 @@ export default function ThankYou() {
       <section className="py-20 mb-80">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <p className="text-2xl text-gray-700 leading-relaxed">
-            If we are a good match I will be in touch in less than 24 hours.
+            If we are a good match I will be in touch within 24 hours.
           </p>
         </div>
       </section>
